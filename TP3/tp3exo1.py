@@ -20,16 +20,22 @@ while int(input("N'entrez surtout pas 100 ! : ")) != 100:
 valeurs = []
 for i in range(10):
     while True:
-        obtenu = int(input(f'Ajouter un {len(valeurs) + 1}e nombre : '))
+        obtenu = int(input(f"Ajouter un {len(valeurs) + 1}e nombre : "))
         if not 0 <= obtenu <= 20:
             print("Désolé, cela doit être compris entre 0 et 20 !")
             continue
         break
     valeurs.append(obtenu)
 
-print(f"Nombre de valeurs strictement inférieurs à 10 : {len([i for i in valeurs if i < 10])}")
-print(f"Nombre de valeurs contenu entre 10 inclus et 15 exclus : {len([i for i in valeurs if 10 <= i < 15])}")
-print(f"Nombre de valeurs supérieur à 15 inclus : {len([i for i in valeurs if i >= 15])}")
+print(
+    f"Nombre de valeurs strictement inférieurs à 10 : {len([i for i in valeurs if i < 10])}"
+)
+print(
+    f"Nombre de valeurs contenu entre 10 inclus et 15 exclus : {len([i for i in valeurs if 10 <= i < 15])}"
+)
+print(
+    f"Nombre de valeurs supérieur à 15 inclus : {len([i for i in valeurs if i >= 15])}"
+)
 
 # d) Calcul et affichage du plus grand nombre N
 
@@ -47,4 +53,3 @@ else:
 
     resultat = N - 1
     print(f"Le plus grand nombre N tel que ∑(N) <= {X} est {resultat}.")
-

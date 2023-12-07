@@ -3,7 +3,9 @@ notes = []
 coefficients = 0
 
 for i in range(1, 6):
-    valeur_brut = input(f"Veuillez entrer la note du module {i} et le coefficient correspondant : ")
+    valeur_brut = input(
+        f"Veuillez entrer la note du module {i} et le coefficient correspondant : "
+    )
 
     note, coefficient = valeur_brut.split()
     note = float(note)

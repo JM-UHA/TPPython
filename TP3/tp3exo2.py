@@ -1,6 +1,6 @@
 import time
 
-print("Méthode \"for\".")
+print('Méthode "for".')
 
 entree = 0
 while entree <= 0:
@@ -10,7 +10,7 @@ for i in range(entree):
     print(f"On attend encore {entree - i} secondes...")
     time.sleep(1)
 
-print("Méthode \"while\".")
+print('Méthode "while".')
 
 entree = 0
 while entree <= 0:
@@ -20,4 +20,3 @@ while entree >= 1:
     print(f"On attend encore {entree} secondes...")
     time.sleep(1)
     entree -= 1
-

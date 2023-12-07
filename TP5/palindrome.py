@@ -6,4 +6,8 @@ while True:
 
     entree_inverse = entree[::-1]
 
-    print("C'est un palindrome !" if entree == entree_inverse else "Ce n'est pas un palindrome.")
+    print(
+        "C'est un palindrome !"
+        if entree == entree_inverse
+        else "Ce n'est pas un palindrome."
+    )
