@@ -1,16 +1,17 @@
-[tool.poetry]
+[project]
+authors = [
+    {name = "Julien Mauroy", email = "pro.julien.mauroy@gmail.com"},
+]
+requires-python = ">=3.8,<4.0"
+dependencies = [
+    "black<24.0.0,>=23.11.0",
+    "isort<6.0.0,>=5.12.0",
+]
 name = "tp5"
 version = "0.1.0"
 description = ""
-authors = ["Julien Mauroy <pro.julien.mauroy@gmail.com>"]
 readme = "README.md"
 
-[tool.poetry.dependencies]
-python = "^3.8"
-black = "^23.11.0"
-isort = "^5.12.0"
-
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
