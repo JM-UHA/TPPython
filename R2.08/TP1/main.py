@@ -1,15 +1,21 @@
 class Voiture:
     _couleur: str
-    
+
     _marque: str
-    
+
     _modele: str
-    
+
     _puissance: int
-    
+
     _options: list[str]
-    
-    def __init__(self, couleur: str = "Rouge", marque: str = "Mercedes", modele: str = "Classe 1", puissance: int = 0) -> None:
+
+    def __init__(
+        self,
+        couleur: str = "Rouge",
+        marque: str = "Mercedes",
+        modele: str = "Classe 1",
+        puissance: int = 0,
+    ) -> None:
         self._couleur = couleur
         self._marque = marque
         self._modele = modele
@@ -27,31 +33,31 @@ class Voiture:
     @property
     def couleur(self) -> str:
         return self._couleur
-    
+
     @couleur.setter
     def couleur(self, couleur: str) -> None:
         self._couleur = couleur
-    
+
     @property
     def marque(self) -> str:
         return self._marque
-    
+
     @marque.setter
     def marque(self, marque: str) -> None:
         self._marque = marque
-    
+
     @property
     def modele(self) -> str:
         return self._modele
-    
+
     @modele.setter
     def modele(self, modele: str) -> None:
         self._modele = modele
-    
+
     @property
     def puissance(self) -> int:
         return self._puissance
-    
+
     @puissance.setter
     def puissance(self, puissance: int) -> None:
         self._puissance = puissance
@@ -59,21 +65,22 @@ class Voiture:
     @property
     def options(self) -> list[str]:
         return self._options
-    
+
     @options.setter
     def options(self, options: list[str]) -> None:
         self._options = options
-        
+
     def ajouter_option(self, option: str) -> None:
         if option not in self.options:
             self._options.append(option)
-        
+
     def retirer_option(self, option: str) -> None:
         if option in self.options:
             self._options.remove(option)
 
     def is_option_present(self, option: str) -> bool:
         return option in self.options
+
 
 mycar1 = Voiture("rouge")
 print(vars(mycar1))
